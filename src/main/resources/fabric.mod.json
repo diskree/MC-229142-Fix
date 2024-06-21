@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "${modId}",
+	"version": "${modVersion}",
+	"name": "${modName}",
+	"description": "MC-229142 fix.",
+	"authors": [
+		"${author}"
+	],
+	"contact": {
+		"sources": "${repoUrl}"
+	},
+	"license": "MIT",
+	"icon": "assets/mc229142fix/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.diskree.mc229142fix.MC229142Fix"
+		]
+	},
+	"mixins": [
+		"mc229142fix.mixin.json"
+	],
+	"depends": {
+		"java": ">=${minJavaVersion}",
+		"minecraft": ">=${minMinecraftVersion}",
+		"fabricloader": ">=${minLoaderVersion}"
+	},
+	"accessWidener": "mc229142fix.accesswidener"
+}
