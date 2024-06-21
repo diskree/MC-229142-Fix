@@ -41,8 +41,7 @@ public class ItemRendererMixin {
             spyglassOrTridentModel,
             stack,
             null,
-            null,
-            0
+            null
         );
         if (customSpyglassOrTridentModel == null) {
             return models.getModelManager().getMissingModel();
